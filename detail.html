@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Maizil">
+    <meta name="author" content="Maizil">
+    <title>Reliance Daily Online Food Ordering</title>
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="./vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="./vendor/select2/css/select2.min.css" rel="stylesheet">
+    <link href="./css/maizil.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.theme.css">
+    <style>
+        .Prev_Next_btn {
+            margin-top: -15px !important;
+        }
+
+        .Prev_Next_btn .icofont-thin-left,
+        .Prev_Next_btn .icofont-thin-right {
+            font-weight: 900 !important;
+            font-size: 30px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="homepage-header">
+        <div class="overlay"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light maizil-nav shadow-sm border-position">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <!-- <img alt="logo" src="img/favicon.png"> -->
+                    <img class="logo_size " alt="logo" src="img/Logo/Final logo-02.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="listing.html"><i class="icofont-sale-discount"></i> Offers <span
+                                    class="badge badge-warning">New</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="404.html"><i class="icofont-live-support"></i> Support</a>
+                        </li>
+                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"> <i class="icofont-live-support"></i> My Account</a>
+                            <div class="dropdown-menu dropdown-menu-right shadow-sm border-0 mt-2">
+                                <a class="dropdown-item" href="orders.html#orders"><i class="icofont-food-cart"></i>
+                                    Orders</a>
+                                <a class="dropdown-item" href="orders.html#offers"><i class="icofont-sale-discount"></i>
+                                    Apply Coupons</a>
+                                <a class="dropdown-item" href="orders.html#favourites"><i class="icofont-heart"></i>
+                                    Favourites</a>
+                                <a class="dropdown-item" href="orders.html#payments"><i class="icofont-credit-card"></i>
+                                    Payments</a>
+                                <a class="dropdown-item" href="orders.html#addresses"><i
+                                        class="icofont-location-pin"></i> Addresses</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-cart">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shopping-basket"></i> Cart
+                                <span class="badge badge-success">4</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-cart-top p-0 dropdown-menu-right shadow-sm border-0 mt-2">
+                                <div class="dropdown-cart-top-header p-4">
+                                    <img class="img-fluid mr-3" alt="maizil" src="img/cart.jpg">
+                                    <h6 class="mb-0">Gus's World Famous Chicken</h6>
+                                    <p class="text-secondary mb-0">Nerul Sec-5,Navi Mumbai,400000 </p>
+                                    <small><a class="text-primary font-weight-bold" href="detail.html">View Full Menu</a></small>
+                                </div>
+                                <div class="dropdown-cart-top-body border-top p-4">
+                                    <p class="mb-2"><i class="icofont-ui-press text-danger food-item"></i> Chicken Tikka
+                                         x 1 <span class="float-right text-secondary">&#x20B9; 60</span></p>
+                                    <p class="mb-2"><i class="icofont-ui-press text-success food-item"></i> Corn & Peas
+                                        Salad x 1 <span class="float-right text-secondary">&#x20B9; 50</span></p>
+                                    <p class="mb-2"><i class="icofont-ui-press text-success food-item"></i> Veg Seekh
+                                         x 1 <span class="float-right text-secondary">&#x20B9; 100</span></p>
+                                    <p class="mb-2"><i class="icofont-ui-press text-danger food-item"></i> Pizza
+                                         x 1 <span class="float-right text-secondary">&#x20B9; 300</span></p>
+                                    
+                                </div>
+                                <div class="dropdown-cart-top-footer border-top p-4">
+                                    <p class="mb-0 font-weight-bold text-secondary">Sub Total <span
+                                            class="float-right text-dark">&#x20B9; 510</span></p>
+                                    <small class="text-info">Extra charges may apply</small>
+                                </div>
+                                <div class="dropdown-cart-top-footer border-top p-2">
+                                    <a class="btn btn-success btn-block btn-lg" href="checkout.html"> Checkout</a>
+                                </div>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="pt-5 pb-5 homepage-search-block position-relative detail-margin-top">
+            <div class="banner-overlay"></div>
+            <div class="container">
+                <div class="row d-flex align-items-center py-lg-4 mt-n5 mb-n5 detail-margin-top">
+                    <div class="col-lg-7 mx-auto ">
+                        <div>
+                            <img class="img-responsive img-thumbnail w-100 restImage" style="height: 400px;" src="img/RestaurantsImage.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mx-auto mt-n5 pl-5">
+                        <div class="txt res-block-text">
+                            <p class="rest-name-txt text-light font-weight-bold display-2"> Bawarchi </p>
+                            <div class="text-light top_bnr_hdd2"> Delicious And Tasty Food</div>
+                            <div class="text-light top_bnr_hdd2"> Nerul Navi Mumbai </div>
+                            <h5 class="text-light Spc_txt4"> Review <i class="fa fa-star"></i> <i
+                                    class="fa fa-star"></i> <i class="fa fa-star"></i> </h5>
+                            <div class="text-light top_bnr_hdd3"> A Classic delight with 100% </div>
+                            <h1 class="text-light top_bnr_hdd3"> Real Mozzarella Cheese </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="section pt-5 pb-5 products-section" style="background-color:#e5e5e5;">
+        <div class="container">
+            <div class="section-header text-center">
+                <h4 class="mb-4"> "Restaurants-Name" Menu</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-carousel-Res-four owl-theme">
+
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Soup </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Stater </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Gravy </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Rice </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Noodles </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Burger </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Pizza </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Desserts </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Biryani </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Burger </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Fried Rice </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                        <div class="item">
+                            <div class="list-card bg-white h-50 rounded overflow-hidden position-relative shadow-sm">
+                                <div class="p-3 position-relative">
+                                    <div class="list-card-body">
+                                        <h6 class="mb-1 text-center "><a href="#" class="text-black"> Tandoori Chicken </a> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section pt-5 pb-5 products-section">
+        <div class="container">
+            <div class="section-header ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 >Noodles</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search Here" aria-label="Search Here"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text second-search" id="basic-addon2"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class=" float-right">
+                            <label class="CheckBox_Container">Only Veg
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section  pb-5 bg-white becomemember-section border-bottom">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/1.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1">Chicken Egg Roll</h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold"
+                                                data-toggle="modal" data-target="#Cart_Modal">Add To Cart</button>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/2.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Poha Pulao </h6>
+                                    <p class="text-gray mb-3 mt-2">Chinese Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Pizza </h6>
+                                    <p class="text-gray mb-3 mt-2">Cheese Pizza</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Chicken Dum Biryani </h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Biryani</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/1.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1">Chicken Egg Roll</h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/2.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Poha Pulao </h6>
+                                    <p class="text-gray mb-3 mt-2">Chinese Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Pizza </h6>
+                                    <p class="text-gray mb-3 mt-2">Cheese Pizza</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Chicken Dum Biryani </h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Biryani</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/1.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1">Chicken Egg Roll</h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/2.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Poha Pulao </h6>
+                                    <p class="text-gray mb-3 mt-2">Chinese Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Pizza </h6>
+                                    <p class="text-gray mb-3 mt-2">Cheese Pizza</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Chicken Dum Biryani </h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Biryani</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/1.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1">Chicken Egg Roll</h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/2.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Poha Pulao </h6>
+                                    <p class="text-gray mb-3 mt-2">Chinese Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Pizza </h6>
+                                    <p class="text-gray mb-3 mt-2">Cheese Pizza</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Chicken Dum Biryani </h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Biryani</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/1.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1">Chicken Egg Roll</h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/2.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Poha Pulao </h6>
+                                    <p class="text-gray mb-3 mt-2">Chinese Recipe</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Pizza </h6>
+                                    <p class="text-gray mb-3 mt-2">Cheese Pizza</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="item">
+                        <div
+                            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm ResProducts ">
+                            <div class="list-card-image">
+                                <div class="star position-absolute"><span class="badge badge-success">
+                                        <i class="icofont-star"></i> 3.1 (300+)</span>
+                                </div>
+                                <img src="img/list/5.png" class="img-fluid item-img">
+                            </div>
+                            <div class="p-3 position-relative ">
+                                <div class="list-card-body">
+                                    <h6 class="mb-1"> Chicken Dum Biryani </h6>
+                                    <p class="text-gray mb-3 mt-2">Chicken Biryani</p>
+                                    <div>
+                                        <span class="Pro_Cost "> &#x20B9; 360 </span>
+                                        <span class="float-right"> <button class="btn custom-color font-weight-bold">Add
+                                                To Cart</button> </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section mt-5 pb-5 bg-white becomemember-section border-bottom">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Restaurants Special</h2>
+                <span class="line "></span>
+            </div>
+            <div class="row">
+                <div class="col-md-4 p-0">
+                    <div class="mt-4" style="height: 357px;">
+                        <div class="text-center ">
+                            <span class="line w-25" style="margin-bottom: 25px;"></span>
+                        </div>
+                        <h3 class="font-weight-bold text-center"> Malai Tikka </h3>
+                        <p class="text-gray Spc_txt2 text-center"> Delicious And Tasty Food </p>
+                        <p class="text-gray mt-n2 Spc_txt3 text-center"> Nerul Navi Mumbai </p>
+                        <p class="Spc_txt4 text-center">Review <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> </p>
+                        <p class="text-gray mt-n2 Spc_txt5 text-center"> Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+                    <img class="img-responsive w-100" src="img/Specail_Product1.jpg" alt="Product">
+
+                </div>
+                <div class="col-md-4 p-0">
+                    <img class="img-responsive w-100" src="img/Specail_Product2.jpg" alt="Product">
+                    <div class="mt-4" style="height: 357px;">
+                        <div class="text-center">
+                            <span class="line w-25" style="margin-bottom: 25px;"></span>
+                        </div>
+                        <h3 class="font-weight-bold text-center"> Malai Tikka </h3>
+                        <p class="text-gray Spc_txt2 text-center"> Delicious And Tasty Food </p>
+                        <p class="text-gray mt-n2 Spc_txt3 text-center"> Nerul Navi Mumbai </p>
+                        <p class="Spc_txt4 text-center">Review <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> </p>
+                        <p class="text-gray mt-n2 Spc_txt5 text-center"> Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0">
+                    <div class="mt-4" style="height: 357px;">
+                        <div class="text-center">
+                            <span class="line w-25" style="margin-bottom: 25px;"></span>
+                        </div>
+                        <h3 class="font-weight-bold text-center"> Malai Tikka </h3>
+                        <p class="text-gray Spc_txt2 text-center"> Delicious And Tasty Food </p>
+                        <p class="text-gray mt-n2 Spc_txt3 text-center"> Nerul Navi Mumbai </p>
+                        <p class="Spc_txt4 text-center">Review <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> </p>
+                        <p class="text-gray mt-n2 Spc_txt5 text-center"> Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+                    <img style="height: 380px;" class="img-responsive w-100" src="img/Specail_Product3.jpg"
+                        alt="Product">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section  pb-5 bg-white becomemember-section border-bottom">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-4 mb-2">
+                    <div class="media quality">
+                        <img src="img/Best-Quality.jpg" class="mr-3" alt="Quality ">
+                        <div class="vl"></div>
+                        <div class="media-body ml-3">
+                            <h5 class="mt-0">Best Quality Guaranty</h5>
+                            This is an international chain
+                            of family restaurants.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="media quality">
+                        <img src="img/Best-Quality2.jpg" class="mr-3" alt="Quality ">
+                        <div class="vl"></div>
+                        <div class="media-body ml-3">
+                            <h5 class="mt-0">Free Shipping</h5>
+                            Sign in and get free Shipping
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="media quality">
+                        <img src="img/Best-Quality3.jpg" class="mr-3" alt="Quality ">
+                        <div class="vl"></div>
+                        <div class="media-body ml-3">
+                            <h5 class="mt-0">30 Minutes Delivery</h5>
+                            Everything you order will Quickly delivered to your door
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="footer pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 col-sm-12">
+                    <h6 class="mb-3">Subscribe to our Newsletter</h6>
+                    <form class="newsletter-form mb-1">
+                        <div class="input-group">
+                            <input type="text" placeholder="Please enter your email" class="form-control">
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-primary">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <p><a class="text-info" href="register.html">Register now</a> to get updates on <a
+                            href="offers.html">Offers and Coupons</a></p>
+                    <div class="app">
+                        <p class="mb-2">DOWNLOAD APP</p>
+                        <a href="#">
+                            <img class="img-fluid" src="img/google.png">
+                        </a>
+                        <a href="#">
+                            <img class="img-fluid" src="img/apple.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-6 mobile-none">
+                </div>
+                <div class="col-md-2 col-6 col-sm-4">
+                    <h6 class="mb-3">About OE</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 col-sm-4">
+                    <h6 class="mb-3">For Foodies</h6>
+                    <ul>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Blogger Help</a></li>
+                        <li><a href="#">Verified Users</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 m-none col-4 col-sm-4">
+                    <h6 class="mb-3">For Restaurants</h6>
+                    <ul>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Add a Restaurant</a></li>
+                        <li><a href="#">Claim your Listing</a></li>
+                        <li><a href="#">For Businesses</a></li>
+                        <li><a href="#">Owner Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom-search pt-5 pb-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    
+                    <p class="mt-4 text-black">POPULAR FOOD</p>
+                    <div class="search-links">
+                        <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a
+                            href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South
+                            Indian</a> | <a href="#">Punjabi Food</a> | <a href="#">Fast Food</a> | <a
+                            href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a
+                            href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a
+                            href="#">Punjabi Food</a><a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a
+                            href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a
+                            href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a> | <a
+                            href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a
+                            href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South
+                            Indian</a> | <a href="#">Punjabi Food</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="pt-4 pb-4 text-center">
+        <div class="container">
+            <p class="mt-0 mb-0">© Copyright 2020 Reliance Daily. All Rights Reserved</p>
+            
+        </div>
+    </footer>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="./vendor/jquery/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="./vendor/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="./vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+    <script src="./js/custom.js" type="text/javascript"></script>
+
+    <!-- Cart Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="Cart_Modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Your Cart Product </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class=""></div>
+                    </div>
+                    <div class="address-link">
+                        <a href="orders.html#addresses" >
+                            <i class="fa fa-plus"></i> Change Address
+                        </a>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <!-- Removable Item -->
+                            <div class="media alert alert-default alert-dismissible fade show pr-0 pt-4">
+                                <img src="img/Cart_Image/cart-img.jpg"
+                                    class="cart-product-image img-responsive align-self-start mr-3" alt="Product">
+                                <div class="media-body cart-item">
+                                    <h6 class="mt-0">Checken Tandoori Masala Tikka</h6>
+                                    <p><i class="fas fa-map-marker-alt"></i> Nerul Navi Mumbai</p>
+                                    <div class="row w-100 p-0">
+                                        <div class="col-md-6 col-6 col-sm-6 pr-0">
+                                            <h6 class="mt-0"> &#x20B9; 2210 </h6>
+                                        </div>
+                                        <div class="col-md-6 col-6 col-sm-6 p-0 text-right">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                            <input class="d-inline w-25" type="text">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button type="button" class="close cart-close-btn" data-dismiss="alert"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div> <!-- Removable Item  END -->
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Removable Item -->
+                            <div class="media alert alert-default alert-dismissible fade show pr-0 pt-4">
+                                <img src="img/Cart_Image/cart-img.jpg"
+                                    class="cart-product-image img-responsive align-self-start mr-3" alt="Product">
+                                <div class="media-body cart-item">
+                                    <h6 class="mt-0">Checken Tandoori Masala Tikka</h6>
+                                    <p><i class="fas fa-map-marker-alt"></i> Nerul Navi Mumbai</p>
+                                    <div class="row w-100 p-0">
+                                        <div class="col-md-6 col-6 col-sm-6 pr-0">
+                                            <h6 class="mt-0"> &#x20B9; 2210 </h6>
+                                        </div>
+                                        <div class="col-md-6 col-6 col-sm-6 p-0 text-right">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                            <input class="d-inline w-25" type="text">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button type="button" class="close cart-close-btn" data-dismiss="alert"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div> <!-- Removable Item  END -->
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Removable Item -->
+                            <div class="media alert alert-default alert-dismissible fade show pr-0 pt-4">
+                                <img src="img/Cart_Image/cart-img.jpg"
+                                    class="cart-product-image img-responsive align-self-start mr-3" alt="Product">
+                                <div class="media-body cart-item">
+                                    <h6 class="mt-0">Checken Tandoori Masala Tikka</h6>
+                                    <p><i class="fas fa-map-marker-alt"></i> Nerul Navi Mumbai</p>
+                                    <div class="row w-100 p-0">
+                                        <div class="col-md-6 col-6 col-sm-6 pr-0">
+                                            <h6 class="mt-0"> &#x20B9; 2210 </h6>
+                                        </div>
+                                        <div class="col-md-6 col-6 col-sm-6 p-0 text-right">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                            <input class="d-inline w-25" type="text">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button type="button" class="close cart-close-btn" data-dismiss="alert"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div> <!-- Removable Item  END -->
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Removable Item -->
+                            <div class="media alert alert-default alert-dismissible fade show pr-0 pt-4">
+                                <img src="img/Cart_Image/cart-img.jpg"
+                                    class="cart-product-image img-responsive align-self-start mr-3" alt="Product">
+                                <div class="media-body cart-item">
+                                    <h6 class="mt-0">Checken Tandoori Masala Tikka</h6>
+                                    <p><i class="fas fa-map-marker-alt"></i> Nerul Navi Mumbai</p>
+                                    <div class="row w-100 p-0">
+                                        <div class="col-md-6 col-6 col-sm-6 pr-0">
+                                            <h6 class="mt-0"> &#x20B9; 2210 </h6>
+                                        </div>
+                                        <div class="col-md-6 col-6 col-sm-6 p-0 text-right">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                            <input class="d-inline w-25" type="text">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button type="button" class="close cart-close-btn" data-dismiss="alert"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div> <!-- Removable Item  END -->
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Removable Item -->
+                            <div class="media alert alert-default alert-dismissible fade show pr-0 pt-4">
+                                <img src="img/Cart_Image/cart-img.jpg"
+                                    class="cart-product-image img-responsive align-self-start mr-3" alt="Product">
+                                <div class="media-body cart-item">
+                                    <h6 class="mt-0">Checken Tandoori Masala Tikka</h6>
+                                    <p><i class="fas fa-map-marker-alt"></i> Nerul Navi Mumbai</p>
+                                    <div class="row w-100 p-0">
+                                        <div class="col-md-6 col-6 col-sm-6 pr-0">
+                                            <h6 class="mt-0"> &#x20B9; 2210 </h6>
+                                        </div>
+                                        <div class="col-md-6 col-6 col-sm-6 p-0 text-right">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                            <input class="d-inline w-25" type="text">
+                                            <button class="btn btn-outline-default btn-sm d-inline btn-less-great">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button type="button" class="close cart-close-btn" data-dismiss="alert"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div> <!-- Removable Item  END -->
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="btn btn-default add-more-btn-size"> <i class="fa fa-plus"></i> Add More
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mt-4 pl-3">
+                        <div class="add-ons-txt">
+                            <i class="fa fa-plus"></i> Add Ons
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-2 pl-4">
+                            <div class="addone-img text-center">
+                                <img class="img-responsive" src="img/Cart_Image/Sprite.png" alt="">
+                            </div>
+                            <div class="addone-price text-center ">
+                                <p class="addone-name"> Sprite <i class="fa fa-rupee-sign"></i>45 </p>
+                            </div>
+                            <div class="addone-btn text-center "> <button class="btn btn-default w-100">Add</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pl-4">
+                            <div class="addone-img text-center">
+                                <img class="img-responsive" src="img/Cart_Image/lassi.png" alt="">
+                            </div>
+                            <div class="addone-price text-center ">
+                                <p class="addone-name"> Lassi <i class="fa fa-rupee-sign"></i>45 </p>
+                            </div>
+                            <div class="addone-btn text-center "> <button class="btn btn-default w-100">Add</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pl-4">
+                            <div class="addone-img text-center">
+                                <img class="img-responsive" src="img/Cart_Image/juice.png" alt="">
+                            </div>
+                            <div class="addone-price text-center ">
+                                <p class="addone-name"> Juice <i class="fa fa-rupee-sign"></i>45 </p>
+                            </div>
+                            <div class="addone-btn text-center "> <button class="btn btn-default w-100">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row pl-3">
+                        <div class="payment-hd"> Payment Detail </div>
+                    </div>
+
+                    <div class="row mt-4 pl-3">
+                        <div class="col-md-12">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td scope="col">Total Amount</td>
+                                        <td  class="pr-4 text-right " scope="col " ><i class="fa fa-rupee-sign"></i> 1800 </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Restaurants Packaging Charge</td>
+                                        <td  scope="col"  class="pr-4 text-right "><i class="fa fa-rupee-sign"></i> 50 </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Discount</td>
+                                        <td scope="col"  class="pr-4 text-right "><i class="fa fa-rupee-sign"></i> 50 </td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td scope="row"> <strong>Total Payment</strong> </td>
+                                        <td scope="col" class="pr-4 text-right "> <strong><i class="fa fa-rupee-sign"></i> 1900 </strong> </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                            <div class="mb-2 bg-white rounded p-2 clearfix">
+                                <img class="img-fluid float-left" src="img/wallet-icon.png">
+                                <h6 class="font-weight-bold text-right mb-2">Total Payment : <span class="text-danger">
+                                    <i class="fa fa-rupee-sign"></i> 1850</span></h6>
+                                <p class="seven-color mb-1 text-right">You have saved <i class="fa fa-rupee-sign"></i>50 on the bill</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-primary checkout-btn w-25">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Cart Modal END -->
+
+    <!-- Add Address Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="AddAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Add Address Modal END -->
+
+</body>
+
+</html>
