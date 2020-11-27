@@ -1030,6 +1030,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <form action="checkout.html" method="POST">
                     <div class="row">
                         <div class=""></div>
                     </div>
@@ -1268,10 +1269,10 @@
                             </div>
                         </div>
                     </div>
-
+                  </form>
                 </div>
                 <div class="modal-footer justify-content-start">
-                    <button type="button" class="btn btn-primary checkout-btn w-25">Checkout</button>
+                    <button type="submit" class="btn btn-primary checkout-btn w-50" onclick="Redirect()">Checkout</button>
                 </div>
             </div>
         </div>
@@ -1300,7 +1301,12 @@
     </div>
   </div>
     <!-- Add Address Modal END -->
-
+    <script>
+        function Redirect() {
+        window.location = "checkout.html";
+     }
+    </script>
+    
 </body>
 
 </html>
